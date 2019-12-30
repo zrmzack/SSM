@@ -20,8 +20,9 @@ public class Client {
         //1.huoqu核心容器对象
         ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
         //2.根据ID 获取bean对象
-        IAccountService as = (IAccountService) ac.getBean("accountService", IAccountService.class);
-        //   IAccountDao adao = ac.getBean("accountDao", IAccountDao.class);
+//        IAccountService as = (IAccountService) ac.getBean("accountService", IAccountService.class);
+//       IAccountService as = (IAccountService) ac.getBean("accountService2", IAccountService.class);
+       IAccountService as = (IAccountService) ac.getBean("accountService3", IAccountService.class);
         as.saveAccount();
         ((ClassPathXmlApplicationContext) ac).close();
     }
