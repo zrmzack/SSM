@@ -21,6 +21,15 @@
         <!--//文件后缀名-->
         <property name="suffix" value=".jsp"/>
     </bean>
-    <!--开启springmvc框架注解支持-->
+
+    <!--<bean id="ConversionServiceFactoryBean" class="org.springframework.context.support.ConversionServiceFactoryBean">-->
+        <!--<property name="converters">-->
+            <!--<set>-->
+                <!--<bean class="cn.itcast.utils.StringToDateConverter"/>-->
+            <!--</set>-->
+        <!--</property>-->
+
+    <!--</bean>-->
+    <!--&lt;!&ndash;开启springmvc框架注解支持&ndash;&gt;      conversionService-->
     <mvc:annotation-driven/>
 </beans>

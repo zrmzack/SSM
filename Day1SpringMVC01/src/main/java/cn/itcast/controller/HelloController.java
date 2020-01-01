@@ -15,4 +15,9 @@ public class HelloController {
         System.out.println("Hello mvc");
         return "success";
     }
+@RequestMapping(path = "/request",params = {"username=zrm"})
+    public String testRequest() {
+        System.out.println("requestring");
+        return "success";
+    }
 }
